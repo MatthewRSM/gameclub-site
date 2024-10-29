@@ -3,6 +3,7 @@
 /upgrade
 
 # ignore these plugins
+/plugins/debug-bar
 
 # ignore specific themes
 /themes/twenty*/
