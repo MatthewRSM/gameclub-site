@@ -204,3 +204,10 @@ if ( ! function_exists( 'twentytwentyfour_pattern_categories' ) ) :
 endif;
 
 add_action( 'init', 'twentytwentyfour_pattern_categories' );
+
+function remove_theme_editor() {
+    if (is_admin()) {
+        remove_menu_page('theme-editor.php');
+    }
+}
+add_action('admin_menu', 'remove_theme_editor');
